@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><h1>Hotel Booking</h1></header>
+  <main>
+    <section id="hotelsSection">
+      <h2>Available Hotels</h2>
+      <div id="hotelsContainer"></div>
+    </section>
+
+    <section id="bookingSection">
+      <h2>Book a Room</h2>
+      <form id="bookingForm">
+        <label>Hotel:
+          <select id="hotelSelect"></select>
+        </label>
+        <label>Your name: <input type="text" id="name" required /></label>
+        <label>Your email: <input type="email" id="email" required /></label>
+        <label>Check-in: <input type="date" id="checkIn" required /></label>
+        <label>Check-out: <input type="date" id="checkOut" required /></label>
+        <label>Rooms: <input type="number" id="rooms" min="1" value="1" required /></label>
+        <button type="submit">Book</button>
+      </form>
+      <div id="message"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
